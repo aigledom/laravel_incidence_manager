@@ -1,66 +1,88 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Laravel Incidence Manager
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Description
 
-## About Laravel
+This repository hosts a Laravel-based web application tailored for efficient incident management within municipalities. It offers user-friendly interfaces for incident tracking, reporting, and analysis, empowering municipal authorities to enhance community service and resource allocation.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Dashboard
+- Users are greeted with a dashboard upon accessing the web application, tailored to their roles.
+- Normal Users:
+  - Simple navigation bar providing quick access to essential functions:
+    - Login as Administrator: Access to a broader set of administrative functions.
+    - Create Incident: Ability to anonymously create incidents for prompt resolution.
+    - Change website language.
+- Administrators:
+  - Side navigation menu granting full control over management functions:
+    - Home: Main system page.
+    - User Control: Facilitates user and role management.
+    - Incident Management: Provides comprehensive view and tools for managing incidents.
+    - Category Management: Register and edit categories for efficient classification.
+    - Company Management: Register and edit associated companies.
+    - Additional Options: Includes specific functions as per administrator requirements.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### User Administration
+- User management system configured to restrict access to the administration menu to unauthorized users and those with specific privileges.
+- User Creation:
+  - Form fields include Name, Phone, Email, Password, User Role, and Association with Company.
+- User Control Panel:
+  - Provides comprehensive overview of registered users in the database.
+  - Features a table with user information and options to edit or delete users.
 
-## Learning Laravel
+### Incident Management
+- Incident Creation:
+  - Form for gathering information about a new incident including Personal Information, Attachment of Images, Category Selection, Description, Location, Privacy Policies, and Captcha for human interaction validation.
+- Incident Control Panel:
+  - Offers a basic view of incidents registered in the database with visual indicators for their status.
+  - Provides filtering options and details view for each incident.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Category Management
+- Category Registration:
+  - Form for registering categories including Name in multiple languages and Association with Companies.
+- Category Control Panel:
+  - Presents a complete view of registered categories with options to edit or delete categories.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Company Management
+- Company Registration:
+  - Form for registering companies including Name, CIF, Phone, Activity, Address, Email, and Association with Categories.
+- Company Control Panel:
+  - Displays registered companies with options to edit or delete companies.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Installation
 
-## Laravel Sponsors
+### Prerequisites
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- [XAMPP](https://www.apachefriends.org/index.html) installed on your system.
+- [Composer](https://getcomposer.org/) installed on your system.
+- [Node.js](https://nodejs.org/en) and npm installed on your system.
 
-### Premium Partners
+### Steps
+To run this project locally, follow these steps:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+1. Clone the repository to your local machine using `git clone`.
+2. Navigate to the project directory.
+3. Install PHP dependencies using `composer install`.
+4. Install JavaScript dependencies using `npm install`. 
+5. Copy the .env.example file to .env:
+   
+   ```bash
+   cp .env.example .env
+   
+6. Generate the application key:
+   
+    ```bash
+   php artisan key:generate
+    
+7. Configure the .env file with your database connection details. Make sure to set the database name as "webincidencias". Then migrate the database:
+    
+   ```bash
+   php artisan migrate
+   
+8. Start the development server using `php artisan serve`. 
+9. Access the application in your web browser at `http://localhost:8000`.
+10. The default user to Login has email `admin@gmail.com` and password `abc123.,`, you can modify this data in the DB.
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+If you'd like to contribute to this project, feel free to fork the repository and submit a pull request with your changes. Contributions are always welcome!
