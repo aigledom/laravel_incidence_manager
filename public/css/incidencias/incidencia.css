@@ -1,0 +1,106 @@
+#create_form .form-control{
+    background: #f4f4f4 !important;
+}
+
+.container {
+    margin-bottom: 5%;
+}
+
+.card-header {
+    background-color:rgba(33,37,41, 0.9) !important;
+}
+
+.card-footer{
+    background-color:rgba(206,212,218, 0.8) !important;
+}
+
+#form-header {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#form-tagline {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    color: #ffffff;
+    margin-top: 2rem;
+    padding: 4%;
+    text-align: left;
+}
+
+.create #form-tagline {
+    background: #6699CC;
+}
+
+.edit #form-tagline {
+    background: rgb(187, 122, 2);
+}
+
+.miniatura {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+#form-content {
+    background: #f4f4f4;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    margin-top: 2rem;
+    padding: 2% 3% 3% 3%;
+}
+
+.control-label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+div .submit-button {
+    margin-top: 3%;
+    text-align: right;
+}
+
+#mapa {
+    height: 400px;
+    width: 100%;
+}
+
+#miniaturaContainer {
+    background-color: rgb(200, 200, 200, .2);
+    border-collapse: collapse;
+    border-color: #d5d5d5 !important;
+}
+
+#imageCarousel {
+    width: 100%;
+    height: 400px;
+}
+
+.carousel-item>img {
+    object-fit: cover;
+}
+
+.miniatura {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.thumbnail {
+    width: auto !important;
+}
+
+/*Estilos del formulario*/
+.input-group-prepend,
+.input-group-prepend .input-group-text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bg-color-create {
+    background-color: #c4d9ee;
+}
+
+#basic-addon-name {
+    height: 2.4rem;
+}

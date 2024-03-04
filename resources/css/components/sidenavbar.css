@@ -1,0 +1,112 @@
+.side-navbar {
+    height: inherit;
+    width: 250px;
+    overflow-y: scroll;
+    margin-left: -250px;
+    transition: 0.5s;
+}
+
+.side-navbar.closed {
+    margin-left: 0;
+    /* Adjust the value as needed */
+}
+
+#sideContainer {
+    min-width: 260px;
+    height: inherit;
+    margin-left: -260px;
+    margin-right: 0px;
+    transition: 0.5s;
+    background-color: #282828 !important;
+}
+
+.side-navbar::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-link.accordion-item a {
+    text-decoration: none;
+    color: white !important;
+    line-height: 32px;
+}
+
+.nav-link.accordion-item button {
+    animation: none;
+    background-color: #282828 !important;
+    color: white !important;
+}
+
+.accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.nav-link.accordion-item a::before {
+    content: '\2192' ' ';
+}
+
+.side-navbar,
+.nav-link.accordion-item {
+    background-color: #282828;
+}
+
+.nav-link.accordion-item:active,
+.nav-link.accordion-item:focus,
+.nav-link.accordion-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.my-container {
+    transition: 0.4s;
+}
+
+.active-nav {
+    margin-left: 0 !important;
+    display: block;
+}
+
+/* for main section */
+.active-cont {
+    margin-left: 2rem;
+    position: absolute;
+    top: 1.6rem;
+    left: 2rem;
+}
+
+#menu-btn {
+    background-color: #282828;
+    color: #fff;
+    margin-left: -2rem;
+}
+
+@media (max-width: 576px) { 
+    .active-cont {
+        top: 2.4rem;
+    }
+}
+
+@media (max-width:480px) {
+    #sideContainer {
+        position: absolute;
+        z-index: 4;
+        width: 100%;
+        overflow-y: scroll;
+        max-height: 70vh;
+        min-height: calc(100vh - 12rem);
+    }
+
+    .active-nav {
+        margin: auto !important;
+    }
+
+    .active-cont {
+        position: fixed;
+    }
+
+    .side-navbar {
+        margin-left: -100%;
+    }
+
+    #sideContainer {
+        margin-left: -100%;
+    }
+}

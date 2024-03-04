@@ -1,0 +1,6 @@
+@media (max-width: 950px) {
+    th:nth-child(1),
+    td:nth-child(1) {
+        display: none;
+    }
+}

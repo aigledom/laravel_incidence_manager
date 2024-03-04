@@ -1,0 +1,5 @@
+@media (max-width: 407px) {
+    #btnGroup button, #btnGroup a{
+        margin-top: 0.5rem;
+    }
+}

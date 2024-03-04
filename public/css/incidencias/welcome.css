@@ -1,0 +1,46 @@
+.table-responsive mx-auto {
+    max-width: 1400px;
+}
+
+.btnOptions {
+    background-color: rgb(121, 141, 203) !important;
+}
+
+.btnOptions i {
+    color: white;
+}
+
+#incidencias-table_filter{
+    margin-bottom: 0.5rem;
+}
+
+.toolbar{
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 620px) {
+    /* Oculta las columnas que no deseas mostrar */
+    th:nth-child(4),
+    td:nth-child(4),
+    th:nth-child(5),
+    td:nth-child(5),
+    th:nth-child(6),
+    td:nth-child(6),
+    th:nth-child(8),
+    td:nth-child(8) {
+        display: none;
+    }
+
+    th:first-child,
+    td:first-child {
+        width: 1% !important;
+        max-width: 30px;
+    }
+}
+
+@media (min-width: 1300px) {
+    #incidencias-table_wrapper {
+        margin-left: 3vw !important;
+        margin-right: 3vw !important;
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "roles": [{
+            "id": 0,
+            "name": "Admin",
+            "nivel": 3
+        },
+        {
+            "id": 1,
+            "name": "Gestor",
+            "nivel": 2
+        },
+        {
+            "id": 2,
+            "name": "Empleado",
+            "nivel": 0
+        },
+        {
+            "id": 3,
+            "name": "Responsable",
+            "nivel": 1
+        },
+        {
+            "id": 4,
+            "name": "sinRol",
+            "nivel": 0
+        }
+    ]
+}

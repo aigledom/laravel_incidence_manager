@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+h1,
+h2 {
+    font-family: 'Space Grotesk';
+    text-transform: uppercase;
+    font-weight: bolder !important;
+    font-size: 2.5rem !important;
+}
+
+#logo {
+    max-width: 3rem;
+    max-height: 3rem;
+}
+
+.navbar-nav {
+    min-height: 4vh;
+}
+
+.navbar-nav .nav-item a,
+#enlacesFooter a {
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-item a::before,
+#enlacesFooter a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: salmon;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item a:hover::before,
+#enlacesFooter a:hover::before {
+    width: 100%;
+}
+
+#mainContainer {
+    min-height: 90vh;
+}
+
+#mapa {
+    border-radius: .5rem;
+}
+
+#map {
+    height: 40vh;
+}
+
+.mapa-vacio {
+    border: 1px solid #444444;
+    background-image: url("../imgs/mapa_vacio.png");
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0, 0.6);
+    align-items: center;
+    display: flex;
+    text-transform: capitalize;
+}
+
+/*Animaciones y estilo de los botones*/
+button:hover,
+a:hover,
+.thumbnail:hover {
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        transform: scale(0.91);
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
+@media (min-width: 1118px) {
+    .navbar {
+        padding-left: 10vw !important;
+        padding-right: 10vw !important;
+    }
+}
+
+@media (max-width:480px) {
+    #mainContainer {
+        min-height: calc(100vh - 13rem)
+    }
+}
+
+@media (min-width: 576px) {
+    .fs-sm-1 {
+        font-size: calc(1.375rem + 1.5vw) !important;
+    }
+
+    .fs-sm-2 {
+        font-size: calc(1.325rem + 0.9vw) !important;
+    }
+
+    .fs-sm-3 {
+        font-size: calc(1.3rem + 0.6vw) !important;
+    }
+
+    .fs-sm-4 {
+        font-size: calc(1.275rem + 0.3vw) !important;
+    }
+
+    .fs-sm-5 {
+        font-size: 1.25rem !important;
+    }
+
+    .fs-sm-6 {
+        font-size: 1rem !important;
+    }
+}
+
+@media (min-width: 374px) {
+    .d-xs-inline-block {
+        display: inline-block !important;
+    }
+}
