@@ -21,6 +21,8 @@ This repository hosts a Laravel-based web application tailored for efficient inc
     - Category Management: Register and edit categories for efficient classification.
     - Company Management: Register and edit associated companies.
     - Additional Options: Includes specific functions as per administrator requirements.
+      
+<img width="760" alt="Dashboard" src="public/files/screenshots/admin-dashboard.png">
 
 ### User Administration
 - User management system configured to restrict access to the administration menu to unauthorized users and those with specific privileges.
@@ -29,25 +31,44 @@ This repository hosts a Laravel-based web application tailored for efficient inc
 - User Control Panel:
   - Provides comprehensive overview of registered users in the database.
   - Features a table with user information and options to edit or delete users.
+    
+<img width="760" alt="Dashboard" src="public/files/screenshots/user-admin-create.png">
+<img width="760" alt="Dashboard" src="public/files/screenshots/user-mng-panel.png">
 
 ### Incident Management
 - Incident Creation:
   - Form for gathering information about a new incident including Personal Information, Attachment of Images, Category Selection, Description, Location, Privacy Policies, and Captcha for human interaction validation.
+    
+<img width="760" alt="Dashboard" src="public/files/screenshots/incidence-mng-create.png">
+
 - Incident Control Panel:
   - Offers a basic view of incidents registered in the database with visual indicators for their status.
   - Provides filtering options and details view for each incident.
+    
+<img width="760" alt="Dashboard" src="public/files/screenshots/incidence-mng-panel.png">
+<img width="760" alt="Dashboard" src="public/files/screenshots/incidence-mng-show.png">
 
 ### Category Management
 - Category Registration:
   - Form for registering categories including Name in multiple languages and Association with Companies.
+    
+<img width="760" alt="Dashboard" src="public/files/screenshots/category-mng-create.png">
+
 - Category Control Panel:
   - Presents a complete view of registered categories with options to edit or delete categories.
+
+<img width="760" alt="Dashboard" src="public/files/screenshots/category-mng-panel.png">
 
 ### Company Management
 - Company Registration:
   - Form for registering companies including Name, CIF, Phone, Activity, Address, Email, and Association with Categories.
+
+<img width="760" alt="Dashboard" src="public/files/screenshots/company-mng-create.png">
+ 
 - Company Control Panel:
   - Displays registered companies with options to edit or delete companies.
+ 
+<img width="760" alt="Dashboard" src="public/files/screenshots/company-mng-panel.png">
 
 ## Installation
 
